@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/scripts/slideshow.js" defer></script>
+    <title>Demolink#org</title>
+</head>
+<body>
+    <header role="banner">
+    
+    <div class="aside-container">
+        <aside role="complementary"> 
+            <p>WWW.DEMOLINK.ORG|</p>
+            <ul>
+                <li><a href="#">SUPPORT|</a></li>
+                <li><a href="#">FAQS|</a></li>
+                <li><a href="#">SITEMAP|</a></li>
+                <li><a href="#">HELP|</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <div class="header-container">
+        <h1>Detroix</h1>
+
+<!-- CITATION :
+ https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+ The reference image makes it seem like the main image is in a slideshow with three images. I did not write this code out of my tuckus, and directly used W3 to create this slideshow. There are slight modifications.
+
+ I would also like to add, that I have likely wrote a similar function in past experience with JavaScript, but it is the program W3 had. I took time to understand the functions and classes, and how they function as to avoid just using something that works without understanding it.
+
+ Thank you
+-->
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images -->
+    <div class="mySlides fade">
+      <img src="./static/Screenshot 2025-02-24 120038.png" alt="Business Professional with glasses duplicate.">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="./static/Screenshot 2025-02-24 120038.png" alt="Business Professional with glasses duplicate." class="reversed">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="./static/Screenshot 2025-02-24 120038.png" alt="Business Professional with glasses duplicate." class="upside-down">
+    </div>
+  
+  
+  <!-- The dots/circles -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+<!-- END OF CITATION -->
+
+        <nav role="navigation">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main role="main">
+
+      <div class="card-container">
+
+        <div class="card">
+          <h3>SMART</h3>
+          <img src="/static/puzzle.png" alt="puzzle with code on it">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in quae possimus consequatur quibusadam, accusantium eligendi commodi est odit aliquam.</p>
+          <button type="button" class="more-bttn">MORE</button>
+        </div>
+
+        <div class="card">
+          <h3>STRONG</h3>
+          <img src="/static/plant.png" alt="a hand holding a sprout">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in quae possimus consequatur quibusadam, accusantium eligendi commodi est odit aliquam.</p>
+          <button type="button" class="more-bttn">MORE</button>
+        </div>
+
+        <div class="card">
+          <h3>STABLE</h3>
+          <img src="/static/maze.png" alt="geometry maze">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in quae possimus consequatur quibusadam, accusantium eligendi commodi est odit aliquam.</p>
+          <button type="button" class="more-bttn">MORE</button>
+        </div>
+
+      </div>
+
+      <div section-container>
+
+        <section>
+          <h2>SERVICES</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Asperiores temporibus vitae odit deserunt!</li>
+            <li>Adipisci eaque accusamus dicta id.</li>
+            <li>Inventore ab hic eum omnis.</li>
+            <li>Esse nihil voluptatum eaque tempore.</li>
+            <li>Tempora minima repudiandae laudantium iusto.</li>
+            <li>Ipsa sunt maxime cumque et?</li>
+            <li>Fuga accusamus voluptate fugit exercitationem?</li>
+          </ul>
+
+          <button type="button" class="more-bttn">MORE</button>
+        </section>
+
+        <section>
+          <h2>OPPORTUNITIES</h2>
+          <ul>
+            <li>
+              <h4>Lorem, ipsum dolor sit</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia similique doloremque nemo a officiis neque? Ullam esse ipsam molestiae corporis accusamus qui, suscipit reiciendis, debitis laboriosam vero harum illo. Incidunt.</p>
+            </li>
+
+            <li>
+              <h4>Lorem, ipsum dolor sit</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sit. Illum laborum, commodi nihil inventore dolorem molestias debitis! Reprehenderit maxime unde dignissimos, error earum laudantium consequatur tenetur molestias consectetur! Sunt!</p>
+            </li>
+          </ul>
+
+          <button type="button" class="more-bttn">MORE</button>
+        </section>
+
+        <section>
+          <h2>NEWS</h2>
+          <ul>
+            <li>
+              <img src="" alt="Nov 21" class="news-img">
+              <h4></h4>
+              <p></p>
+            </li>
+
+            <li>
+              <img src="" alt="Nov 09" class="news-img">
+              <h4></h4>
+              <p></p>
+            </li>
+
+            <li>
+              <img src="" alt="Nov 17" class="news-img">
+              <h4></h4>
+              <p></p>
+            </li>
+          </ul>
+
+        </section>
+
+      </div>
+    </main>
+
+</body>
+</html>
