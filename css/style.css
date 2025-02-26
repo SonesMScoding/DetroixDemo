@@ -1,115 +1,93 @@
 body{
   font-family: "Archivo", serif;
   font-optical-sizing: auto;
+  background-color: #f2f3f5;
 
 }
 /* HEADER START */
 
 .aside-container{
-   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: .2vw;
+  width: 100%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ margin-top: .2vw;
 
-  background-color: #0b0b31;
-  color: #a9a9a9;
-  font-size: 1.5vw;
+ background-color: #0b0b31;
+ color: #a9a9a9;
+ font-size: 1.5vw;
 }
 
 aside{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  order: 1;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ width: 100%;
+ order: 1;
 
-  margin: 0vw 3vw;
+ margin: 0vw 3vw;
 
-  font-size: 1vw;
+ font-size: 1vw;
 }
 
 .aside-container p{
-  padding:0;
-  margin: 0;
-  display: flex;
-  margin: .5vw;
+ padding:0;
+ margin: 0;
+ display: flex;
+ margin: .5vw;
 }
 
 .aside-container ul{
-  list-style: none;
+ list-style: none;
 
-  display: flex;
-  margin: 0;
-  padding: 0;
+ display: flex;
+ margin: 0;
+ padding: 0;
 }
 
 .aside-container li{
-  margin: .5vw;
-  margin-left:0vw;
+ margin: .5vw;
+ margin-left:0vw;
 }
 
 .aside-container li a{
-  text-decoration: none;
-  color: rgb(170, 170, 170);
+ text-decoration: none;
+ color: rgb(170, 170, 170);
 }
 
-/* .header-container{
-  margin: 1vw 3vw 0vw 3vw;
-  width: 91vw;
-  display: flex;
-  flex-direction: row;
-} */
 
 .header-content nav{
-margin: 0;
-}
-
-.header-content ul{
-  list-style: none;
-
-  display: flex;
-  justify-content: space-between;
-  gap: .3vw;
-  margin: 3.5vw 0vw 2vw 0vw;
-  padding: 0;
-}
-
-.header-content li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #0b0b31;;
-  margin: 0vw;
-  border-radius: 10%;
-  border: none;
-  height: 3vw;
-}
-
-.header-content a{
-  text-decoration: none;
-  color: white;
-  font-size: 2vw;
-  text-align: center;
-  margin: 0vw 1.70vw;
-}
-
-.header-content h1{
-  font-family: "Lobster", serif;
-  font-weight: 400;
-  font-size: 7vw;
   margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-
-.detroix-dot {
-  color: #ff9800;
-  font-size: 1.2em; 
-  position: relative;
-
-}
+  }
+  
+  .header-content ul{
+    list-style: none;
+  
+    display: flex;
+    justify-content: space-between;
+    gap: .3vw;
+    margin: 3.5vw 0vw 2vw 0vw;
+    padding: 0;
+  }
+  
+  .header-content li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0b31;;
+    margin: 0vw;
+    border-radius: 10%;
+    border: none;
+    height: 3vw;
+  }
+  
+  .header-content a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    margin: 0vw 1.70vw;
+  }
 
           /* W3 Slideshow start 
 I adapted this to fit a flexbox layout and got rid of the pointers so that is just dots to change the image
@@ -184,6 +162,13 @@ order: 2;
   order: 2;
 }
 
+.header-content img {
+  order: 1;
+  display: flex;
+  width: 21vw;
+  margin: 1.5vw 0 0 -1vw;
+}
+
 /* END HEADING */
 
 /* Image differing  */
@@ -237,7 +222,6 @@ order: 2;
   color: grey;
   padding: 2vw;
   width: 30%;
-  font-size: 2.3vw;
 }
 
 .card img{
@@ -300,11 +284,11 @@ padding-left: 0;
 
 .section-container h2{
   margin: 1vw 2vw 1vw 1.5vw;
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 
 .section-container h4{
-  font-size: 2.3vw;
+  font-size: 1.7vw;
 }
 
 
@@ -315,7 +299,6 @@ padding-left: 0;
 
 .section-container p{
   color: #a9a9a9;
-  font-size: 2.3vw;
 }
 
 .section-container .more-bttn{
@@ -360,12 +343,12 @@ display: flex;
 
 .news h2{
   margin-bottom: 1.5vw;
-  font-size: 3.75vw;
+  font-size: 3.2vw;
 
 }
 
 .news h4{
-  font-size: 2vw;
+  font-size: 1.3vw;
 }
 
  .date-block{
@@ -373,8 +356,8 @@ display: flex;
   border-radius: 25%;
   margin: 1vw;
   padding: 2.3vw;
-  width: 3vw;
-  height: 3vw;
+  width: 2vw;
+  height: 2vw;
   aspect-ratio: 1 / 1;
   display: flex; 
   justify-content: center; 
