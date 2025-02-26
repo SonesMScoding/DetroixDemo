@@ -1,35 +1,36 @@
+body{
+  font-family: "Archivo", serif;
+  font-optical-sizing: auto;
 
-
+}
 /* HEADER START */
 
-
-/* W3 Slideshow start 
+          /* W3 Slideshow start 
 I adapted this to fit a flexbox layout and got rid of the pointers so that is just dots to change the image
 */
 
-/* Slideshow container */
 .slideshow-container {
- display: flex;
+display: flex;
 flex-direction: column;
 align-items: center;
+order: 2;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
   
 }
 
-
 .dot-container {
     display: flex;
+    margin: .5vw 0;
+
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -42,7 +43,6 @@ align-items: center;
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -52,21 +52,45 @@ align-items: center;
   from {opacity: .4}
   to {opacity: 1}
 }
-/* W3 Slideshow Styling end */
+          /* W3 Slideshow Styling end */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  order: 1;
+}
+
+.header-content h1 {
+  order: 1;
+}
+
+.header-content nav {
+  order: 2;
+}
+
+/* END HEADING */
 
 /* Image differing  */
 
   .slideshow-container img{
-    width:778px; 
-    height: 463px;
+    display: flex;
+    margin: 1vw 3vw 0vw 3vw;
+    width: 88vw;
+
   }
 
   .reversed{
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-
+  transform: scaleX(-1);
   }
-
   .upside-down{
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
@@ -74,50 +98,221 @@ align-items: center;
 
   /* HEADER END */
 
+  /* MORE Button */
+  .more-bttn{
+    color: white;
+    text-align: center;
+    font-size: medium;
+    background-color:#213349 ;
+    width: 67px;
+    height: 35px;
+    border-radius: 10%;
+    border: none;
+    text-decoration: none;
+    margin: 0vw;
+  }
+
+  /* CARDS */
+ .card-container{
+  margin: 0vw 3vw 0vw 3vw;
+  padding: 0;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #000000; 
+ }
+
+ .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3vw;
+  color: grey;
+  padding: 2vw;
+  width: 30%;
+}
+
+.card img{
+  justify-content: flex-start;
+  display: flex;
+  
+}
+
+.card-container .more-bttn{
+  margin-bottom: 2vw;
+
+}
+
+.left-card{
+  border-left: 1px solid black;
+}
+
+.right-card{
+  border-right: 1px solid black;
+padding-left: 0;
+}
+
+.card h3{
+  font-size: 4.5vw;
+  margin: 1.5vw 0 1.5vw 0;
+  color: black;
+}
+
+/* CARDS END */
+
   /* SECTIONS */
 
   .section-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 45px 45px 10px 45px;
     width: 100%;
-    height: 25%;
-    background-color: rgb(74, 74, 142);
-}
+    height: 30%;
+    color: white;
+    background: linear-gradient(to left top, #0f1821 54%, #1c2d40 );
+  
+  }
+
+  .card-container img{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .section-insidecontainer{
+    padding: 3.5vw 3.5vw 0vw 3.5vw;
+    justify-content: space-between;
+    display: flex;
+  }
 
 .section-container section{
-    width: 33.3%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
 }
 
 .section-container h2{
-    color: white;
+  margin: 1vw 2vw 1vw 1.5vw;
+  font-size: 3vw;
+}
+
+.section-container h4{
+  font-size: 1.7vw;
+}
+
+
+.section-container ul{
+  margin: 0vw;
+}
+
+
+.section-container p{
+  color: #a9a9a9;
+}
+
+.section-container .more-bttn{
+  margin: auto 1vw 1.2vw 1vw;
+}
+
+/* Services Section */
+
+/* Opportunities Section */
+.opportunities ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3vw;  
 
 }
 
-.services{
-
+.section-container .opportunities h4{
+  margin: 1vw 0vw;
 }
 
-.opportunities{
-
-}
-
-.news{
-}
-
-.news ul{
-    list-style-type: none;
-}
-
+/* News Section */
 
 .news-section{
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  width: 100%
+}
+
+.news h2{
+  margin-bottom: 1.5vw;
+  font-size: 3.2vw;
+
+}
+
+.news h4{
+  font-size: 1.3vw;
 }
 
  .date-block{
-    background-color: blanchedalmond;
-    width: 50px;
-    text-align: center;
-
+  background-color: #be8542;
+  border-radius: 25%;
+  margin: 1vw;
+  padding: 2.3vw;
+  width: 2vw;
+  height: 2vw;
+  aspect-ratio: 1 / 1;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  
  }
+
+ .date-block p {
+  margin: 0; 
+  padding: 0;
+  color: white;
+  font-size: 1.3vw;
+  font-stretch:condensed;
+  -webkit-transform:scale(.5,1.5);
+  transform: scale(.6,1.6);
+  font-weight: bold;
+  gap: .5vw;
+}
+
+.day p{
+  font-size: 3.25vw;
+  margin:0;
+  padding: 0;
+}
+
+ .news-section-content{
+  margin: 1vw 0vw 1vw 1vw;
+  padding: 0vw;
+  display:flex;
+  flex-direction: column;
+ }
+
+ .news-section-content p{
+  margin-right: 1.5vw;
+ }
+
+.news-section-content > * {
+  margin: .2vw 0; 
+}
+
+.special-block-1{
+  background-color: #bc6142;
+}
+
+.special-block-2{
+  background-color: #bd425e;
+}
+
+
+/* FOOTER START*/
+footer{
+  background-color: #0e1e31;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  color: white;
+}
+
+footer p{
+  margin: 2vw 4vw;
+}
+
+/* FOOTER END */

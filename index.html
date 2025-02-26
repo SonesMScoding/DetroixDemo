@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/slideshow.js" defer></script>
+    
     <link rel="stylesheet" href="./css/style.css">
-    <script src="/scripts/slideshow.js" defer></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Demolink#org</title>
 </head>
 <body>
@@ -23,54 +31,38 @@
     </div>
 
     <div class="header-container">
-        <h1>Detroix</h1>
+        <div class="header-content">
+            <h1>Detroix</h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">FAQS</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </div>
 
-<!-- CITATION :
- https://www.w3schools.com/howto/howto_js_slideshow.asp
-
- The reference image makes it seem like the main image is in a slideshow with three images. I did not write this code out of my tuckus, and directly used W3 to create this slideshow. There are slight modifications.
-
- I would also like to add, that I have likely wrote a similar function in past experience with JavaScript, but it is the program W3 had. I took time to understand the functions and classes, and how they function as to avoid just using something that works without understanding it.
-
- Thank you
--->
-
-<!-- Slideshow container -->
-<div class="slideshow-container">
-
-    <!-- Full-width images -->
-    <div class="mySlides fade">
-      <img src="./static/Screenshot 2025-02-24 120038.png" alt="Business Professional with glasses duplicate.">
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="./static/Screenshot 2025-02-24 120038.png" alt="Business Professional with glasses duplicate." class="reversed">
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="./static/Screenshot 2025-02-24 120038.png" alt="Business Professional with glasses duplicate." class="upside-down">
-    </div>
-  
-  
-  <!-- The dots/circles -->
-  <div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-</div>
-
-<!-- END OF CITATION -->
-
-        <nav role="navigation">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">FAQS</a></li>
-                <li><a href="#">CONTACTS</a></li>
-            </ul>
-        </nav>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images -->
+            <div class="mySlides fade">
+                <img src="./static/Screenshot 2025-02-24 120038.png" alt="Business Professional with glasses duplicate.">
+            </div>
+            <div class="mySlides fade">
+                <img src="./static/Screenshot 2025-02-24 120038.png" alt="Business Professional with glasses duplicate." class="reversed">
+            </div>
+            <div class="mySlides fade">
+                <img src="./static/Screenshot 2025-02-24 120038.png" alt="Business Professional with glasses duplicate." class="upside-down">
+            </div>
+            <!-- The dots/circles -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
     </div>
     </header>
 
@@ -80,24 +72,24 @@
     <!-- CARDS -->
       <div class="card-container">
 
-        <div class="card">
+        <div class="card right-card">
           <h3>SMART</h3>
-          <img src="/static/puzzle.png" alt="puzzle with code on it">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in quae possimus consequatur quibusadam, accusantium eligendi commodi est odit aliquam.</p>
+          <img src="./static/puzzle.png" alt="puzzle with code on it">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in quae possimus consequatur quibusdam, accusantium eligendi commodi est odit aliquam.</p>
           <button role="button" type="button" class="more-bttn">MORE</button>
         </div>
 
         <div class="card">
           <h3>STRONG</h3>
-          <img src="/static/plant.png" alt="a hand holding a sprout">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in quae possimus consequatur quibusadam, accusantium eligendi commodi est odit aliquam.</p>
+          <img src="./static/plant.png" alt="a hand holding a sprout">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in quae possimus consequatur quibusdam, accusantium eligendi commodi est odit aliquam.</p>
           <button role="button" type="button" class="more-bttn">MORE</button>
         </div>
 
-        <div class="card">
+        <div class="card left-card">
           <h3>STABLE</h3>
-          <img src="/static/maze.png" alt="geometry maze">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in quae possimus consequatur quibusadam, accusantium eligendi commodi est odit aliquam.</p>
+          <img src="./static/maze.png" alt="geometry maze">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in quae possimus consequatur quibusdam, accusantium eligendi commodi est odit aliquam.</p>
           <button role="button" type="button" class="more-bttn">MORE</button>
         </div>
 
@@ -106,91 +98,96 @@
 
 <!-- SECTIONS -->
       <div class="section-container">
+        <div class="section-insidecontainer">
 
-        <section class="services">
+<!-- Services section> -->
+<section class="services">
+
           <h2>SERVICES</h2>
           <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Asperiores temporibus vitae odit deserunt!</li>
-            <li>Adipisci eaque accusamus dicta id.</li>
-            <li>Inventore ab hic eum omnis.</li>
-            <li>Esse nihil voluptatum eaque tempore.</li>
-            <li>Tempora minima repudiandae laudantium iusto.</li>
-            <li>Ipsa sunt maxime cumque et?</li>
-            <li>Fuga accusamus voluptate fugit exercitationem?</li>
+            <li><p>Lorem ipsum dolor sit amet.</p></li>
+            <li><p>Asperiores temporibus vitae odit deserunt!</p></li>
+            <li><p>Adipisci eaque accusamus dicta id.</p></li>
+            <li><p>Inventore ab hic eum omnis.</p></li>
+            <li><p>Esse nihil voluptatum eaque tempore.</li>
+            <li><p>Tempora minima repudiandae laudantium iusto.</p></li>
+            <li><p>Ipsa sunt maxime cumque et?</p></li>
+            <li><p>Fuga accusamus voluptate fugit exercitationem?</p></li>
           </ul>
 
           <button role="button" type="button" class="more-bttn">MORE</button>
         </section>
+<!--End Services Section  -->
 
+<!-- Opportunities Section -->
         <section class="opportunities">
           <h2>OPPORTUNITIES</h2>
           <ul>
             <li>
               <h4>Lorem, ipsum dolor sit</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia similique doloremque nemo a officiis neque? Ullam esse ipsam molestiae corporis accusamus qui, suscipit reiciendis, debitis laboriosam vero harum illo. Incidunt.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia similique doloremque nemo a officiis neque? Ullam esse ipsam molestiae corporis accusamus qui.</p>
             </li>
 
             <li>
               <h4>Lorem, ipsum dolor sit</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sit. Illum laborum, commodi nihil inventore dolorem molestias debitis! Reprehenderit maxime unde dignissimos, error earum laudantium consequatur tenetur molestias consectetur! Sunt!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sit. Illum laborum, commodi nihil inventore dolorem molestias debitis!</p>
             </li>
           </ul>
 
           <button role="button" type="button" class="more-bttn">MORE</button>
         </section>
+<!-- End Opportunities Section -->
 
+<!-- News Section -->
         <section class="news">
           <h2>NEWS</h2>
-          <ul>
 
             <div class="news-section">
-            <li>
               <div class="date-block">
-                <p>21</p>
+                <div class = "day"><p>21</p></div>
                 <p>NOV</p>
               </div>
-              <h4>Lorem ipsum dolor sit amet</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ut modi!</p>
-            </li>
+              <div class="news-section-content">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ut modi!</p>
+              </div>
           </div>
 
             <div class="news-section">
-            <li>
-              <div class="date-block">
-                <p>09</p>
+
+              <div class="date-block special-block-1">
+                <div class = "day"><p>09</p></div>
                 <p>NOV</p>
               </div>
-              <h4>Ipsam amet quaerat nesciunt deserunt?</h4>
-              <p>Delectus nobis iste ullam unde soluta doloremque quasi ab tempore vitae fugit incidunt consequatur?</p>
+              <div class="news-section-content">
+                <h4>Ipsam amet quaerat nesciunt deserunt?</h4>
+                <p>Delectus nobis iste ullam unde soluta doloremque quasi ab tempore vitae fugit incidunt consequatur?</p>
+              </div>
 
-            </li></div>
+            </div>
 
             <div class="news-section">
-            <li>
-            <div class="date-block">
-              <p>17</p>
+            <div class="date-block special-block-2">
+              <div class = "day"><p>17</p></div>
               <p>NOV</p>
             </div>
-              <h4>Excepturi ipsa beatae voluptatum officia officiis!</h4>
-              <p>Placeat doloremque nostrum aspernatur hic illo, architecto sed, sequi voluptate ea maxime voluptas?</p>
+              <div class="news-section-content">
+                <h4>Excepturi ipsa beatae voluptatum officia officiis!</h4>
+                <p>Placeat doloremque nostrum aspernatur hic illo?</p>
+              </div>
 
-            </li>
           </div>
-
-          </ul>
-
           <button role="button" type="button" class="more-bttn">MORE</button>
-
         </section>
-
+<!-- End News Section -->
+      </div>
       </div>
 <!-- END SECTIONS -->
     </main>
 
     <!-- FOOTER -->
     <footer role="contentinfo">
-      DETROIX &copy; 2012 PRIVACY POLICY
+     <p> DETROIX &copy; 2012 * PRIVACY POLICY</p>
     </footer>
     <!-- END FOOTER -->
 
