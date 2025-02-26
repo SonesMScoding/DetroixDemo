@@ -12,7 +12,6 @@ body{
  flex-direction: row;
  align-items: center;
  margin-top: .2vw;
-
  background-color: #0b0b31;
  color: #a9a9a9;
  font-size: 1.5vw;
@@ -24,9 +23,7 @@ aside{
  justify-content: space-between;
  width: 100%;
  order: 1;
-
  margin: 0vw 3vw;
-
  font-size: 1vw;
 }
 
@@ -39,7 +36,6 @@ aside{
 
 .aside-container ul{
  list-style: none;
-
  display: flex;
  margin: 0;
  padding: 0;
@@ -61,13 +57,12 @@ aside{
   }
   
   .header-content ul{
-    list-style: none;
-  
-    display: flex;
-    justify-content: space-between;
-    gap: .3vw;
-    margin: 3.5vw 0vw 2vw 0vw;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: .3vw;
+  margin: 3.5vw 0vw 2vw 0vw;
+  padding: 0;
   }
   
   .header-content li {
@@ -106,8 +101,8 @@ order: 2;
 }
 
 .dot-container {
-    display: flex;
-    margin: .5vw 0;
+  display: flex;
+  margin: .5vw 0;
 
 }
 
@@ -232,9 +227,6 @@ order: 2;
 
 .card-container .more-bttn{
   margin: auto 1vw 1.2vw 1vw;
-
-  
-
 }
 
 .left-card{
@@ -243,7 +235,7 @@ order: 2;
 
 .right-card{
   border-right: 1px solid black;
-padding-left: 0;
+  padding-left: 0;
 }
 
 .card h3{
