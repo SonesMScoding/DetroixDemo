@@ -5,6 +5,46 @@ body{
 }
 /* HEADER START */
 
+.aside-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: #0f1821;
+  color: rgb(170, 170, 170);
+  font-size: 1.5vw;
+}
+
+.aside-container p{
+    margin: 0;
+}
+
+.aside-container ul{
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.aside-container li{
+  margin: .5vw;
+  margin-left:0vw;
+}
+
+.aside-container li a{
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+}
+
+.header-container{
+  margin: 1vw 3vw 0vw 3vw;
+  width: 91vw;
+  display: flex;
+  flex-direction: row;
+}
+
+
           /* W3 Slideshow start 
 I adapted this to fit a flexbox layout and got rid of the pointers so that is just dots to change the image
 */
@@ -83,7 +123,7 @@ order: 2;
   .slideshow-container img{
     display: flex;
     margin: 1vw 3vw 0vw 3vw;
-    width: 88vw;
+    width: 91vw;
 
   }
 
@@ -125,7 +165,6 @@ order: 2;
  .card{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   gap: 3vw;
   color: grey;
   padding: 2vw;
@@ -139,7 +178,9 @@ order: 2;
 }
 
 .card-container .more-bttn{
-  margin-bottom: 2vw;
+  margin: auto 1vw 1.2vw 1vw;
+
+  
 
 }
 
@@ -213,9 +254,18 @@ padding-left: 0;
 
 /* Services Section */
 
+.services ul{
+  list-style-type: "⚙️";
+  }
+  
+  .services p{
+    margin-left: .3vw;
+  }
+
 /* Opportunities Section */
 .opportunities ul{
-  display: flex;
+list-style-type: "🗨️"; 
+display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 3vw;  
@@ -223,7 +273,11 @@ padding-left: 0;
 }
 
 .section-container .opportunities h4{
-  margin: 1vw 0vw;
+  margin: 1vw 0vw 1vw 1vw;
+}
+
+.opportunities p{
+  margin: 1vw 0vw 1vw 1vw;
 }
 
 /* News Section */
